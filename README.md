@@ -1,139 +1,44 @@
-# Agentic-AI-for-HR-Analytics# 🤖 Agentic AI for HR Analytics
+# HR Analytics Project (IBM Employee Attrition)
 
-## Project Overview
+This project performs end-to-end HR analytics using the IBM HR Attrition dataset.
 
-This project implements an **Agentic AI system** that performs end-to-end HR data analysis. The agent is designed to autonomously process employee data, analyze attrition patterns, and generate meaningful insights without manual intervention.
+## What it does
 
-The goal of this project is to simulate a real-world intelligent system that can assist organizations in making data-driven HR decisions.
+- Loads data from `data.csv`
+- Cleans data (missing values, duplicates, Attrition encoding)
+- Performs EDA and prints statistics
+- Creates required visualizations
+- Prints key insights
+- Trains a Logistic Regression model and prints accuracy
+- Suggests optional improvements
 
----
+## Files
 
-##  Objectives
+- `data.csv` - input dataset
+- `hr_analytics_project.py` - main project script
+- `requirements.txt` - Python dependencies
 
-* Analyze employee attrition trends
-* Identify key factors affecting employee turnover
-* Automate the data analysis workflow
-* Generate insights and reports using an AI agent
+## Run
 
----
+1. Install dependencies:
 
-##  What is Agentic AI?
+```bash
+pip install -r requirements.txt
+```
 
-Agentic AI refers to systems that can **plan, make decisions, and execute tasks autonomously** to achieve a specific goal.
+2. Run the project:
 
-In this project, the agent:
+```bash
+python hr_analytics_project.py
+```
 
-* Understands the task (HR analysis)
-* Breaks it into steps
-* Executes each step (data cleaning, analysis, reporting)
-* Produces final insights
+## Expected output
 
----
-
-##  Tech Stack
-
-* Python
-* Pandas
-* Matplotlib / Seaborn
-* Scikit-learn (for optional ML model)
-
----
-
-##  Dataset
-
-* IBM HR Analytics Employee Attrition Dataset
-* Contains employee details such as Age, Salary, Department, Job Role, and Attrition
-
----
-
-##  Workflow
-
-1. **Data Loading**
-
-   * Reads dataset from CSV file
-
-2. **Data Cleaning**
-
-   * Handles missing values
-   * Removes duplicates
-   * Converts categorical values
-
-3. **Data Analysis**
-
-   * Attrition analysis
-   * Department-wise trends
-   * Salary vs attrition
-
-4. **Visualization**
-
-   * Graphs and charts for better understanding
-
-5. **Agent Execution**
-
-   * Automates the entire workflow
-   * Calls functions step-by-step
-
-6. **Report Generation**
-
-   * Generates insights based on analysis
-
----
-
-##  Features
-
-* Automated HR data analysis
-* Modular function-based design
-* Insight generation from dataset
-* Optional machine learning model for prediction
-
----
-
-##  Sample Insights
-
-* Employees with lower salaries show higher attrition
-* Certain departments have higher turnover rates
-* Early-career employees are more likely to leave
-
----
-
-## How to Run
-
-1. Clone the repository
-2. Install required libraries:
-
-   ```bash
-   pip install pandas matplotlib seaborn scikit-learn
-   ```
-3. Place dataset as `data.csv` in project folder
-4. Run the script:
-
-   ```bash
-   python analysis.py
-   ```
-
----
-
-## Future Enhancements
-
-* Integrate with LLM for smarter insights
-* Build a Streamlit dashboard
-* Add real-time data processing
-* Enable email automation for reports
-
----
-
-##  Resume Highlights
-
-* Developed an Agentic AI system for HR analytics
-* Automated data processing and insight generation
-* Implemented decision-making workflow using Python
-* Simulated real-world intelligent agent behavior
-
----
-
-##  Conclusion
-
-This project demonstrates how Agentic AI can be used to automate complex analytical tasks and assist organizations in making better decisions using data.
-
----
-
+- Printed dataset information and EDA stats
+- Visual plots:
+  - Attrition countplot
+  - Department vs attrition countplot
+  - MonthlyIncome vs attrition boxplot
+  - Age histogram
+- Printed key HR insights
+- Printed Logistic Regression accuracy and classification report

@@ -1,0 +1,22 @@
+HR ANALYTICS AGENT REPORT
+=========================
+User Query: analyze attrition
+Records Analyzed: 1470
+
+1) ATTRITION OVERVIEW
+- Attrition Rate: 16.12%
+- Attrition Counts: {0: 1233, 1: 237} (0=No, 1=Yes)
+
+2) DEPARTMENT ANALYSIS
+- Department-wise Attrition Rate (%): {'Sales': 20.63, 'Human Resources': 19.05, 'Research & Development': 13.84}
+- Highest Attrition Department: Sales (20.63%)
+
+3) SALARY ANALYSIS
+- Average MonthlyIncome (Stayed): 6832.74
+- Average MonthlyIncome (Left): 4787.09
+- Salary Summary: {'count': 1470.0, 'mean': 6502.93, 'std': 4707.96, 'min': 1009.0, '25%': 2911.0, '50%': 4919.0, '75%': 8379.0, 'max': 19999.0}
+
+4) KEY INSIGHTS
+- Attrition is concentrated in Sales.
+- Employees who leave generally have lower average monthly income than those who stay.
+- This report is generated automatically by the HR analytics agent workflow.
